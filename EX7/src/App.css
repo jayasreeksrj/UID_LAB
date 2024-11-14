@@ -1,0 +1,125 @@
+* {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+}
+
+html {
+  background-color: #0d0d1a; /* Dark navy background */
+}
+
+.app-name {
+  font-size: 2.8rem;
+  color: #4e9dff; /* Bright blue */
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.15);
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 420px;
+  min-height: 460px;
+  background-color: #1c1c2e; /* Dark purple-gray */
+  text-align: center;
+  margin: 100px auto;
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.App:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.7);
+}
+
+.city-search {
+  width: 100%;
+  max-width: 350px;
+  border: 2px solid #4e9dff; /* Bright blue border */
+  outline: none;
+  border-radius: 30px;
+  font-size: 18px;
+  background-color: #2a2a3b; /* Darker input background */
+  padding: 14px 22px;
+  color: #e6e6e6; /* Light gray text */
+  transition: border 0.3s, background-color 0.3s;
+}
+
+.city-search::placeholder {
+  color: #a6a6b3; /* Softer gray for placeholder */
+}
+
+.city-search:focus {
+  border: 2px solid #72b1ff; /* Light blue on focus */
+  background-color: #33334d;
+}
+
+.city-name {
+  font-size: 2rem;
+  color: #e6e6e6; /* Soft white text for city name */
+  margin-bottom: 10px;
+}
+
+.date {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #a6a6b3; /* Soft gray for date */
+}
+
+.icon-temp {
+  font-size: 3.8rem;
+  font-weight: 700;
+  color: #72b1ff; /* Light blue for temperature */
+  text-align: center;
+  margin-top: 10px;
+}
+
+.deg {
+  font-size: 1.7rem;
+  vertical-align: super;
+}
+
+.des-wind {
+  font-weight: 500;
+  color: #a6a6b3; /* Soft gray for description and wind */
+  margin-top: 10px;
+}
+
+.error-message {
+  display: block;
+  text-align: center;
+  color: #ff4e5e; /* Soft red for error message */
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+.Loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  animation: spin 1.2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.weather-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.weather-icon img {
+  width: 110px;
+  height: 110px;
+  border-radius: 15%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+}

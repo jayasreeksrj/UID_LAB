@@ -1,0 +1,73 @@
+/* Profile Card Container */
+.profile-card {
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 350px;
+    margin: 50px auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .profile-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  /* Profile Header */
+  .profile-header {
+    background: #6a11cb;
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    padding: 30px 0;
+    text-align: center;
+  }
+  
+  /* Profile Image */
+  .profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .profile-picture:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Profile Body */
+  .profile-body {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Name Styling */
+  .profile-name {
+    font-size: 28px;
+    font-weight: 700;
+    color: #333;
+    margin: 15px 0;
+  }
+  
+  /* Email Styling */
+  .profile-email {
+    font-size: 16px;
+    color: #777;
+    margin: 5px 0;
+  }
+  
+  /* Bio Styling */
+  .profile-bio {
+    font-size: 14px;
+    color: #555;
+    margin-top: 15px;
+    line-height: 1.6;
+    font-style: italic;
+  }
+  
+  /* Add subtle background gradients */
+  body {
+    background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+    font-family: 'Poppins', sans-serif;
+  }
+  

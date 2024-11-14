@@ -1,0 +1,118 @@
+/* Calculator Container */
+.calculator {
+    width: 280px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(145deg, #f0f4f8, #d9e2ec);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.calculator:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* Display Section */
+.display {
+    padding: 20px;
+    background: #2d3436;
+    color: #00cec9;
+    text-align: right;
+    font-size: 2.2em;
+    border-radius: 15px;
+    box-shadow: inset 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 25px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+/* Text colors */
+.input {
+    color: #dfe6e9;
+}
+
+.result {
+    color: #00cec9;
+}
+
+/* Button Grid */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+/* Button Styling */
+button {
+    padding: 20px;
+    font-size: 1.4em;
+    font-weight: 600;
+    border: none;
+    border-radius: 15px;
+    background: linear-gradient(145deg, #74b9ff, #a29bfe);
+    box-shadow: 7px 7px 20px #a29bfe, -7px -7px 20px #ffffff;
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    color: #2d3436;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+}
+
+button:hover {
+    background: linear-gradient(145deg, #a29bfe, #74b9ff);
+    transform: translateY(-4px);
+    box-shadow: 10px 10px 25px #a29bfe, -10px -10px 25px #ffffff;
+}
+
+button:active {
+    background: #55efc4;
+    transform: translateY(0);
+    box-shadow: inset 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Specific Button Styles */
+button.operator {
+    background: linear-gradient(145deg, #fab1a0, #ff7675);
+    color: #2d3436;
+}
+
+button.operator:hover {
+    background: linear-gradient(145deg, #ff7675, #fab1a0);
+}
+
+button.equals {
+    background: linear-gradient(145deg, #81ecec, #00cec9);
+    color: #2d3436;
+}
+
+button.equals:hover {
+    background: linear-gradient(145deg, #00cec9, #81ecec);
+}
+
+/* Clear and Delete Buttons */
+button.clear, button.delete {
+    background: linear-gradient(145deg, #ffeaa7, #fdcb6e);
+    color: #2d3436;
+}
+
+button.clear:hover, button.delete:hover {
+    background: linear-gradient(145deg, #fdcb6e, #ffeaa7);
+}
+
+/* Responsive Design */
+@media (max-width: 320px) {
+    .calculator {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .display {
+        font-size: 1.8em;
+        padding: 15px;
+    }
+
+    button {
+        padding: 15px;
+        font-size: 1.2em;
+    }
+}
